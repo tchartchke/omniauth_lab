@@ -10,6 +10,15 @@
   </pre>
 <% else %>
   <p>No authentication information is available.</p>
+
+  <%= form_tag('/auth/developer') do %>
+  <%= submit_tag "Signing in with the developer strategy" %>
+  <% end %> 
+  <%= form_tag('/auth/developer') do %>
+  <%= submit_tag "Signing in with the developer strategy" %>
+  <% end %>
+
+
   <p>Try <%= link_to 'Signing in with the developer strategy', '/auth/developer'%>.</p>
   <p>Try <%= link_to 'Signing in with the GitHub strategy', '/auth/github'%>.</p>
 <% end %>
